@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <body>
+      <div class="container" id="app">
+          <p>{{ title }}</p>
+      </div>
+  </body>
+  <script src="https://unpkg.com/vue"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</html>
+
+<script>
+
+const url = 'http://localhost:3000/csr';
+const vm = new Vue({
+    el: '#app',
+    data: { 
+        title: ""
+    },
+    mounted() {
+        axios.get(url)
+        .then(res => {
+            this.title = res.data
+        });
+    }
+});
+</script>
+
+
