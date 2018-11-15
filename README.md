@@ -1,4 +1,4 @@
-# csr_vs_ssr_example
+# CSR vs SSR example
 
 CSR(Client Side Rendering)과 SSR(Server Side Rendering) 방식 간단히 비교해보는 예제입니다.
 
